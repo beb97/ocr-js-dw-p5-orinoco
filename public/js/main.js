@@ -16,14 +16,14 @@ function createItems(items) {
      tableClone.getElementsByClassName("name")[0].innerHTML = item.name;
      tableClone.getElementsByClassName("price")[0].innerHTML = item.price;
      tableClone.getElementsByClassName("desc")[0].innerHTML = item.description;
-     tableClone.getElementsByClassName("img")[0].innerHTML = generateImageUrl(item.imageUrl);
+     tableClone.getElementsByClassName("img")[0].setAttribute("src", generateImageUrl(item.imageUrl));
      document.getElementById("item-list").appendChild(tableClone);
 
  }
 
 function generateImageUrl(url) {
     let urlSplit = url.split("/");
-    return urlSplit[urlSplit.length -1];
+    return "/img/"+urlSplit[urlSplit.length -1];
 }
 
 
