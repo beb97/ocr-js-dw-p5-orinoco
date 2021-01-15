@@ -6,6 +6,7 @@ const path = require('path');
 const cameraRoutes = require('./routes/camera');
 const teddyRoutes = require('./routes/teddy');
 const furnitureRoutes = require('./routes/furniture');
+const indexRoutes = require('./routes/index');
 
 const app = express();
 
@@ -27,12 +28,15 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use('/images', express.static(path.join(__dirname, 'images')));
+
+//app.use(express.static('public'));
+app.use(express.static(path.join(__dirname, 'public')));
 
 app.use(bodyParser.json());
 
 app.use('/api/cameras', cameraRoutes);
 app.use('/api/teddies', teddyRoutes);
 app.use('/api/furniture', furnitureRoutes);
+app.use('/', indexRoutes);
 
 module.exports = app;
