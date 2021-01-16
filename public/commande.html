@@ -25,77 +25,82 @@
 
 
 <header>
-    <h1><a href="/">Orinoco</a></h1>
     <nav>
-        <a href="/">home</a>
-        <a href="/cart/">cart</a>
+        <h1><a href="/">Orinoco</a></h1>
+        <div>
+            <a href="/">Products</a>
+            <a href="/cart/">Cart</a>
+        </div>
     </nav>
 </header>
 <main>
-    <table  id="item-list" >
-        <caption>Details</caption>
-        <tr>
-            <th>name</th>
-            <th>qty</th>
-            <th>price</th>
-            <th>total</th>
-        </tr>
-        <tr id="item-table" style="display:none">
-            <td ><a class="item-link name">name</a></td>
-            <td class="qty"></td>
-            <td class="price">price</td>
-            <td class="total"></td>
-        </tr>
-    </table>
-    <table>
-        <tr>
-            <td id="item-list-qty"></td>
-            <td>item(s)</td>
-        </tr>
-        <tr>
-            <th>total</th>
-            <td id="item-list-total"></td>
-        </tr>
-    </table>
-    <form id="user-form">
-        <fieldset id="user-fields">
-            <table>
-                <tr>
 
-                    <td><label for="firstName">First name :</label></td>
-                    <td><input type="text" name="firstName" id="firstName" required/></td>
-                </tr>
-                <tr>
-                    <td><label for="lastName">Last name :</label></td>
-                    <td><input type="text" name="lastName" id="lastName" required/></td>
-                </tr>
-                <tr>
-                    <td><label for="email">Email :</label></td>
-                    <td><input type="email" name="email" id="email" required/></td>
-                </tr>
-                <tr>
-                    <td><label for="address">Address :</label></td>
-                    <td><input type="address" name="address" id="address" required/></td>
-                </tr>
-                <tr>
-                    <td><label for="city">City :</label></td>
-                    <td><input type="city" name="city" id="city" required/></td>
-                </tr>
+    <section>
+        <table>
+            <caption>Summary</caption>
+            <tr>
+                <td id="item-list-qty"></td>
+                <td>item(s)</td>
+            </tr>
+            <tr>
+                <th>total</th>
+                <td id="item-list-total"></td>
+            </tr>
+        </table>
 
-            </table>
+        <table id="item-list">
+            <caption>Details</caption>
+            <tr>
+                <th>name</th>
+                <th>qty</th>
+                <th>price</th>
+                <th>total</th>
+            </tr>
+            <tr id="item-table" style="display:none">
+                <td><a class="item-link name">name</a></td>
+                <td class="qty"></td>
+                <td class="price">price</td>
+                <td class="total"></td>
+            </tr>
+        </table>
+
+        <form id="user-form">
+            <caption>Shipping informations</caption>
+            <fieldset id="user-fields">
+                <table>
+                    <tr>
+
+                        <td><label for="firstName">First name :</label></td>
+                        <td><input type="text" name="firstName" id="firstName" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lastName">Last name :</label></td>
+                        <td><input type="text" name="lastName" id="lastName" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email :</label></td>
+                        <td><input type="email" name="email" id="email" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="address">Address :</label></td>
+                        <td><input type="address" name="address" id="address" required/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="city">City :</label></td>
+                        <td><input type="city" name="city" id="city" required/></td>
+                    </tr>
+
+                </table>
+
+            </fieldset>
+            <input type="submit" id="submitOrderButton"/>
+        </form>
 
 
-        </fieldset>
-        <input type="submit" id="submitOrderButton"></input>
-<!--        <input type="submit" id="submitOrderButton" onsubmit="submitOrder()"></input>-->
-<!--        <input type="submit" id="submitOrderButton" onclick="submitOrder()"></input>-->
-    </form>
+        <div id="order-status"></div>
 
-
-
-    <div id="order-status"></div>
-
-    <div id="order-number"></div>
+        <div id="order-number"></div>
+    </section>
 
 
 

@@ -17,91 +17,116 @@ html {
   line-height: 1.4;
 }
 
-/*
- * Remove text-shadow in selection highlight:
- * https://twitter.com/miketaylr/status/12228805301
- *
- * Vendor-prefixed and regular ::selection selectors cannot be combined:
- * https://stackoverflow.com/a/16982510/7133471
- *
- * Customize the background color to match your design.
- */
-
-::-moz-selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-::selection {
-  background: #b3d4fc;
-  text-shadow: none;
-}
-
-/*
- * A better looking default horizontal rule
- */
-
-hr {
-  display: block;
-  height: 1px;
-  border: 0;
-  border-top: 1px solid #ccc;
-  margin: 1em 0;
-  padding: 0;
-}
-
-/*
- * Remove the gap between audio, canvas, iframes,
- * images, videos and the bottom of their containers:
- * https://github.com/h5bp/html5-boilerplate/issues/440
- */
-
-audio,
-canvas,
-iframe,
-img,
-svg,
-video {
-  vertical-align: middle;
-}
-
-/*
- * Remove default fieldset styles.
- */
-
-fieldset {
-  border: 0;
-  margin: 0;
-  padding: 0;
-}
-
-/*
- * Allow only vertical resizing of textareas.
- */
-
-textarea {
-  resize: vertical;
-}
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
+body {
+max-width: 1000px;
+margin: auto;
+font-family: 'Roboto', sans-serif;
+}
 
-table {
-border: 1px solid black;
+nav {
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+ align-items: center;
+ margin: 10px 40px;
+
+}
+
+main {
+margin: 20px;
+}
+
+section {
+background-color: #F2F2F2;
+border-radius: 15px;
+padding: 15px;
+
+}
+
+h1, h2, h3, a {
+margin: 0px;
+text-decoration: none;
+color:#0065FC;
+}
+
+p {
+color: black;}
+
+h2, h3 {
+text-align: center;
+}
+
+nav h1 {
+font-family: 'Rancho', cursive;
+font-size: 4em;
+}
+
+a:hover {
+text-decoration: underline;
 }
 
 img {
-
-max-height:100%;
-max-width:100%;
+max-height:200px;
+max-width: 100%;
 object-fit: cover;
+border-radius: 15px;
 }
 
-.td-img {
-width:100px;
-height:100px;
+footer {
+margin: 20px;
+max-width : 1200px;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-evenly;
+}
+
+button {
+margin: 15px;
+}
+
+
+.card-pack {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	flex-direction: row;
+}
+
+.card {
+margin: auto;
+margin-bottom: 15px;
+border-radius: 15px;
+border: 4px white solid;
+display: flex;
+justify-content: center;
+background-color: white;
+align-content: center;
+}
+
+.small {
+min-width: 250px;
+max-width: 250px;
+flex-direction: column;
+}
+
+.big {
+max-width: 700px;
+flex-direction: column;
+}
+
+.card > .content {
+text-align: center;
+color:#0065FC;
+}
+
+.img-wrapper {
+display: flex;
+justify-content: center;
 }
 
 /* ==========================================================================

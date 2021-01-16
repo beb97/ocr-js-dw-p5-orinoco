@@ -18,6 +18,9 @@
 
     <link rel="stylesheet" href="/css/main.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto&display=swap" rel="stylesheet">
+
     <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -25,43 +28,33 @@
 
 
 <header>
-    <h1><a href="/">Orinoco</a></h1>
     <nav>
-        <a href="/">home</a>
-        <a href="/cart/">cart</a>
+        <h1><a href="/">Orinoco</a></h1>
+        <div>
+            <a href="/">Products</a>
+            <a href="/cart/">Cart</a>
+        </div>
     </nav>
 </header>
 <main>
-    Items list :
-    <table id="item-table" style="display:none">
-        <tr>
-            <td rowspan="4" class="td-img"><img class="img" src=""></td>
-            <td>id</td>
-            <td class="id"><a class="item-link">id</a></td>
-        </tr>
-        <tr>
-            <td>name</td>
-            <td class="name">name</td>
-        </tr>
-        <tr>
-            <td>price</td>
-            <td class="price">price</td>
-        </tr>
-<!--        <tr>-->
-<!--            <td>desc</td>-->
-<!--            <td class="desc">desc</td>-->
-<!--        </tr>-->
-        <tr>
-            <td><button class="buttonAddToCart">Add to cart</button></td>
-        </tr>
-        <tr>
-            <td><button class="buttonRemoveFromCart">Remove</button></td>
-        </tr>
+    <section>
+    <h2>Products</h2>
+    <div class="card-pack" id="item-list">
+        <div class="small card" id="item-template" style="display:none">
 
-    </table>
-    <div id="item-list">
+            <div class="img-wrapper">
+                <a class="item-link">
+                <img class="img" src=""/>
+                </a>
+            </div>
+            <div class="content">
+            <div class="name"></div>
+            <div class="price"></div>
+            </div>
+        </div>
 
     </div>
+    </section>
 </main>
 <footer>
     Orinoco by pb

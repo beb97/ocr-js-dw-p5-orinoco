@@ -25,49 +25,57 @@
 
 
 <header>
-    <h1><a href="/">Orinoco</a></h1>
     <nav>
-        <a href="/">home</a>
-        <a href="/cart/">cart</a>
+        <h1><a href="/">Orinoco</a></h1>
+        <div>
+            <a href="/">Products</a>
+            <a href="/cart/">Cart</a>
+        </div>
     </nav>
 </header>
 <main>
-    Items list :
-    <table  id="item-list" >
-        <tr>
-            <th>pic</th>
-            <th>name</th>
-            <th>price</th>
-            <th>qty</th>
-            <th>total</th>
-            <th>add</th>
-            <th>remove</th>
-        </tr>
-        <tr id="item-table" style="display:none">
-            <td class="td-img"><img class="img" src=""></td>
-<!--            <td class="id"><a class="item-link">id</a></td>-->
-            <td ><a class="item-link name">name</a></td>
-            <td class="price">price</td>
-            <td class="qty"></td>
-            <td class="total"></td>
-            <td><button class="buttonAddToCart">Add to cart</button></td>
-            <td><button class="buttonRemoveFromCart">Remove</button></td>
-        </tr>
+    <section>
+        <table id="item-list">
+            <tr>
+                <th>pic</th>
+                <th>name</th>
+                <th>price</th>
+                <th>qty</th>
+                <th>total</th>
+                <th>add</th>
+                <th>remove</th>
+            </tr>
+            <tr id="item-table" style="display:none">
+                <td class="td-img"><img class="img" src=""></td>
+                <td><a class="item-link name">name</a></td>
+                <td class="price">price</td>
+                <td class="qty"></td>
+                <td class="total"></td>
+                <td>
+                    <button class="buttonAddToCart">Add to cart</button>
+                </td>
+                <td>
+                    <button class="buttonRemoveFromCart">Remove</button>
+                </td>
+            </tr>
 
-    </table>
-    <table>
-        <tr>
-            <td id="item-list-qty"></td>
-            <td>item(s)</td>
-        </tr>
-        <tr>
-            <th>total</th>
-            <td id="item-list-total"></td>
-        </tr>
-    </table>
+        </table>
+        <table>
+            <tr>
+                <td id="item-list-qty"></td>
+                <td>item(s)</td>
+            </tr>
+            <tr>
+                <th>total</th>
+                <td id="item-list-total"></td>
+            </tr>
+        </table>
 
-    <button class="buttonEmptyCart" onclick="emptyCart()">Empty cart</button>
-    <a href="/order/"> <button class="buttonCartToCommand">Commander</button> </a>
+        <button class="buttonEmptyCart" onclick="emptyCart()">Empty cart</button>
+        <a href="/order/">
+            <button class="buttonCartToCommand">Commander</button>
+        </a>
+    </section>
 
 </main>
 <footer>
