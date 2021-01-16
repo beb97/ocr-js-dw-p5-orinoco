@@ -1,0 +1,102 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Orinoco</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38695af7b0.js" crossorigin="anonymous"></script>
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+
+<header>
+    <nav>
+        <h1><a href="/">Orinoco</a></h1>
+        <div>
+            <a href="/"><i class="fa fa-home"></i> Products</a>
+            <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
+        </div>
+    </nav>
+</header>
+<main>
+    <section>
+        <h2>Your cart :</h2>
+        <table id="item-list">
+            <tr>
+                <th></th>
+                <th>item</th>
+                <th>price</th>
+                <th></th>
+                <th>quantite</th>
+                <th></th>
+                <th>total</th>
+                <th></th>
+            </tr>
+            <tr id="item-table" style="display:none">
+                <td class="td-img"><img class="img" src=""></td>
+                <td><a class="item-link name">name</a></td>
+                <td class="price">price</td>
+                <td>
+                    <button class="buttonRemoveOneFromCart" onclick="removeOneFromCart(this)"><i class="fa fa-minus"></i></button>
+                </td>
+                <td class="qty"></td>
+                <td>
+                    <button class="buttonAddToCart" onclick="addToCart(this)"><i class="fa fa-plus"></i></button>
+                </td>
+                <td class="total bold"></td>
+                <td>
+                    <button class="buttonRemoveFromCart"  onclick="removeFromCart(this)"><i class="fa fa-times"></i></button>
+                </td>
+            </tr>
+            <tfoot>
+                <th></th>
+                <th>Total</th>
+                <th></th>
+                <th></th>
+                <th id="item-list-qty"></th>
+                <th></th>
+                <th id="item-list-total">total</th>
+                <th><button class="buttonEmptyCart" onclick="emptyCart()"><i class="fa fa-trash"></i></button></th>
+            </tfoot>
+
+        </table>
+
+
+        <div>
+            <a href="/order/">
+                <button class="buttonCartToCommand blue-bg">Order <i class="fa fa-arrow-right"></i></button>
+            </a>
+        </diV>
+
+
+
+    </section>
+
+</main>
+<footer>
+    Orinoco by pb
+</footer>
+<script src="/js/main.js"></script>
+<script src="/js/panier.js"></script>
+</body>
+
+</html>

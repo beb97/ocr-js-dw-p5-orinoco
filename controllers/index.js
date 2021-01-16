@@ -5,13 +5,13 @@ exports.getHome = (req, res) => {
 };
 
 exports.getItem = (req, res) => {
-    res.sendFile('produit.html',  {root: './public'} );
+    res.sendFile('product.html',  {root: './public'} );
 };
 
 exports.getCart = (req, res) => {
-    res.sendFile('panier.html',  {root: './public'} );
+    res.sendFile('cart.html',  {root: './public'} );
 };
 
 exports.getOrder = (req, res) => {
-    res.sendFile('commande.html',  {root: './public'} );
+    res.sendFile('order.html',  {root: './public'} );
 };

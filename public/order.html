@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="/css/main.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38695af7b0.js" crossorigin="anonymous"></script>
+
     <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -28,44 +32,39 @@
     <nav>
         <h1><a href="/">Orinoco</a></h1>
         <div>
-            <a href="/">Products</a>
-            <a href="/cart/">Cart</a>
+            <a href="/"><i class="fa fa-home"></i> Products</a>
+            <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
         </div>
     </nav>
 </header>
 <main>
 
     <section>
-        <table>
-            <caption>Summary</caption>
-            <tr>
-                <td id="item-list-qty"></td>
-                <td>item(s)</td>
-            </tr>
-            <tr>
-                <th>total</th>
-                <td id="item-list-total"></td>
-            </tr>
-        </table>
 
+<h2>Your order <i class="fa fa-shopping-basket"></i></h2>
         <table id="item-list">
-            <caption>Details</caption>
-            <tr>
-                <th>name</th>
-                <th>qty</th>
-                <th>price</th>
-                <th>total</th>
-            </tr>
+
             <tr id="item-table" style="display:none">
                 <td><a class="item-link name">name</a></td>
                 <td class="qty"></td>
                 <td class="price">price</td>
                 <td class="total"></td>
             </tr>
+            <tfoot>
+            <th>total</th>
+            <th></th>
+            <th></th>
+            <th id="item-list-total"></th>
+            </tfoot>
+        </table>
+        <table>
+            <tr>
+
+            </tr>
         </table>
 
+        <h2>Shipping informations <i class="fa fa-truck"></i></h2>
         <form id="user-form">
-            <caption>Shipping informations</caption>
             <fieldset id="user-fields">
                 <table>
                     <tr>
@@ -93,7 +92,7 @@
                 </table>
 
             </fieldset>
-            <input type="submit" id="submitOrderButton"/>
+            <input type="submit" class="blue-bg" id="submitOrderButton" value="Confirmer !"/>
         </form>
 
 

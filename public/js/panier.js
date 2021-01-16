@@ -31,8 +31,9 @@
      tableClone.getElementsByClassName("qty")[0].innerHTML = qty;
      tableClone.getElementsByClassName("total")[0].innerHTML = formatPriceEuro(qty*item.price);
      tableClone.getElementsByClassName("img")[0].setAttribute("src", generateImageUrl(item.imageUrl));
-     tableClone.getElementsByClassName("buttonAddToCart")[0].setAttribute("onClick", generateAddToCartLink(item._id));
-     tableClone.getElementsByClassName("buttonRemoveFromCart")[0].setAttribute("onClick", generateRemoveFromCartLink(item._id));
+     tableClone.getElementsByClassName("buttonAddToCart")[0].setAttribute("product", item._id);
+     tableClone.getElementsByClassName("buttonRemoveOneFromCart")[0].setAttribute("product", item._id);
+     tableClone.getElementsByClassName("buttonRemoveFromCart")[0].setAttribute("product", item._id);
      document.getElementById("item-list").appendChild(tableClone);
 
      return qty*item.price;

@@ -17,8 +17,8 @@
      document.getElementsByClassName("price")[0].innerHTML = formatPriceEuro(item.price);
      document.getElementsByClassName("desc")[0].innerHTML = item.description;
      document.getElementsByClassName("img")[0].setAttribute("src", generateImageUrl(item.imageUrl));
-     document.getElementsByClassName("buttonAddToCart")[0].setAttribute("onClick", generateAddToCartLink(item._id));
-     document.getElementsByClassName("buttonRemoveFromCart")[0].setAttribute("onClick", generateRemoveFromCartLink(item._id));
+     document.getElementsByClassName("buttonAddToCart")[0].setAttribute("product", item._id);
+//     document.getElementsByClassName("buttonRemoveFromCart")[0].setAttribute("product", item._id);
 
      const options = item[Object.keys(item)[0]];
      console.log(options);

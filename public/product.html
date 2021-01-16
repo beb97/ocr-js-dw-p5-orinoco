@@ -18,6 +18,10 @@
 
     <link rel="stylesheet" href="/css/main.css">
 
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Rancho&family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/38695af7b0.js" crossorigin="anonymous"></script>
+
     <meta name="theme-color" content="#fafafa">
 </head>
 
@@ -28,16 +32,16 @@
     <nav>
         <h1><a href="/">Orinoco</a></h1>
         <div>
-            <a href="/">Products</a>
-            <a href="/cart/">Cart</a>
+            <a href="/"><i class="fa fa-home"></i> Products</a>
+            <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
         </div>
     </nav>
 </header>
 <main>
     <section>
-        <h2 class="name"></h2>
-    <div class="big card" id="item-template">
 
+    <div class="big card" id="item-template">
+        <h2 class="name"></h2>
         <div class="img-wrapper">
             <a class="item-link">
                 <img class="img" src=""/>
@@ -45,12 +49,19 @@
         </div>
         <div class="content">
             <div ></div>
-            <p class="price"></p>
+            <h3 class="price"></h3>
             <p class="desc"></p>
-            <div><select class="item-options"></select></div>
+            <div>Options : <select class="item-options"></select></div>
             <div>
-            <button class="buttonAddToCart">Add to cart</button>
-            <button class="buttonRemoveFromCart">Remove from cart</button>
+            <button class="buttonAddToCart blue-bg" onclick="addToCart(this)"><i class="fa fa-shopping-cart"></i> Add to cart</button>
+                <div>
+                    <a href="/cart/">go to cart <i class="fa fa-arrow-right"></i></a>
+                </div>
+<div>
+    <a href="/"><i class="fa fa-arrow-left"></i> back to products</a>
+</div>
+
+<!--            <button class="buttonRemoveFromCart" onclick="removeFromCart(this)">Remove from cart</button>-->
             </div>
         </div>
     </div>
