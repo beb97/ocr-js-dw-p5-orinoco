@@ -1,0 +1,80 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Orinoco</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
+
+    <link rel="stylesheet" href="/css/main.css">
+
+    <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+
+
+<header>
+    <h1><a href="/">Orinoco</a></h1>
+    <nav>
+        <a href="/">home</a>
+        <a href="/cart/">cart</a>
+    </nav>
+</header>
+<main>
+    Items list :
+    <table  id="item-list" >
+        <tr>
+            <th>pic</th>
+            <th>name</th>
+            <th>price</th>
+            <th>qty</th>
+            <th>total</th>
+            <th>add</th>
+            <th>remove</th>
+        </tr>
+        <tr id="item-table" style="display:none">
+            <td class="td-img"><img class="img" src=""></td>
+<!--            <td class="id"><a class="item-link">id</a></td>-->
+            <td ><a class="item-link name">name</a></td>
+            <td class="price">price</td>
+            <td class="qty"></td>
+            <td class="total"></td>
+            <td><button class="buttonAddToCart">Add to cart</button></td>
+            <td><button class="buttonRemoveFromCart">Remove</button></td>
+        </tr>
+
+    </table>
+    <table>
+        <tr>
+            <td id="item-list-qty"></td>
+            <td>item(s)</td>
+        </tr>
+        <tr>
+            <th>total</th>
+            <td id="item-list-total"></td>
+        </tr>
+    </table>
+
+    <button class="buttonEmptyCart" onclick="emptyCart()">Empty cart</button>
+    <a href="/order/"> <button class="buttonCartToCommand">Commander</button> </a>
+
+</main>
+<footer>
+    Orinoco by pb
+</footer>
+<script src="/js/main.js"></script>
+<script src="/js/panier.js"></script>
+</body>
+
+</html>

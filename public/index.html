@@ -26,12 +26,16 @@
 
 <header>
     <h1><a href="/">Orinoco</a></h1>
+    <nav>
+        <a href="/">home</a>
+        <a href="/cart/">cart</a>
+    </nav>
 </header>
 <main>
     Items list :
     <table id="item-table" style="display:none">
         <tr>
-            <td rowspan="4"><img class="img" src=""></td>
+            <td rowspan="4" class="td-img"><img class="img" src=""></td>
             <td>id</td>
             <td class="id"><a class="item-link">id</a></td>
         </tr>
@@ -43,9 +47,15 @@
             <td>price</td>
             <td class="price">price</td>
         </tr>
+<!--        <tr>-->
+<!--            <td>desc</td>-->
+<!--            <td class="desc">desc</td>-->
+<!--        </tr>-->
         <tr>
-            <td>desc</td>
-            <td class="desc">desc</td>
+            <td><button class="buttonAddToCart">Add to cart</button></td>
+        </tr>
+        <tr>
+            <td><button class="buttonRemoveFromCart">Remove</button></td>
         </tr>
 
     </table>

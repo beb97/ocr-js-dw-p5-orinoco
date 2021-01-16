@@ -4,23 +4,6 @@ function createItems(items) {
      }
  }
 
- function createItem(item) {
-     console.log(item);
-     let tableTemplate = document.getElementById("item-table");
-
-     let tableClone = tableTemplate.cloneNode(true)
-     
-     tableClone.removeAttribute("style");
-     tableClone.getElementsByClassName("item-link")[0].innerHTML = item._id;
-     tableClone.getElementsByClassName("item-link")[0].setAttribute("href", generateItemLink(item._id));
-     tableClone.getElementsByClassName("name")[0].innerHTML = item.name;
-     tableClone.getElementsByClassName("price")[0].innerHTML = item.price;
-     tableClone.getElementsByClassName("desc")[0].innerHTML = item.description;
-     tableClone.getElementsByClassName("img")[0].setAttribute("src", generateImageUrl(item.imageUrl));
-     document.getElementById("item-list").appendChild(tableClone);
-
- }
-
 function generateImageUrl(url) {
     let urlSplit = url.split("/");
     return "/img/"+urlSplit[urlSplit.length -1];
@@ -29,5 +12,49 @@ function generateImageUrl(url) {
 
 function generateItemLink(id) {
 //    return "item/";
-    return "item/?id="+id;
+    return "/item/?id="+id;
+}
+
+function generateAddToCartLink(id) {
+    return "addToCart('"+id+"');";
+}
+
+function generateRemoveFromCartLink(id) {
+    return "removeFromCart('"+id+"');";
+}
+
+function addToCart(id) {
+    localStorage.setItem(id, getItemQuantity(id)+1);
+    pageReload();
+}
+
+function removeFromCart (id) {
+   localStorage.removeItem(id);
+    pageReload();
+}
+
+function emptyCart() {
+localStorage.clear();
+pageReload();
+}
+
+function pageReload() {
+    document.location.reload();
+}
+
+function getItemQuantity(id) {
+    let itemQuantity = 0;
+    let storageValue = localStorage.getItem(id);
+    if('null' != storageValue)  {
+        let parsedValue = parseInt(storageValue);
+        if (Number.isInteger(parsedValue)) {
+            itemQuantity = parsedValue;
+        }
+    }
+    return itemQuantity;
+}
+
+
+function formatPriceEuro(unformatedPrice) {
+return new Intl.NumberFormat('fr-FR', {style: 'currency', currency: 'EUR', minimumFractionDigits: 0}).format(unformatedPrice);
 }
