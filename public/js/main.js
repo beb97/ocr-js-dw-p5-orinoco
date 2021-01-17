@@ -33,7 +33,11 @@ createItem(id, qty) {
 
 updateItem(id, qty) {
   let newQty = this.getItemQty(id) + qty;
-  this.setItemQty(id, newQty);
+  if (newQty < 1) {
+    this.removeItem(id);
+  } else {
+    this.setItemQty(id, newQty);
+  }
 }
 
 removeItem(id) {
@@ -141,7 +145,7 @@ function countItems() {
   for(let item of cart.items) {
           quantity += item.qty;
   };
-  
+
   return quantity;
 }
 

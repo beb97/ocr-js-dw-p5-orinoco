@@ -17,6 +17,11 @@
 
 	}
 
+	if(cart.items.length == 0) {
+        document.getElementById("buttonCartToCommand").setAttribute("disabled","disabled");
+        document.getElementById("buttonCartToCommand").innerHTML = "your cart is empty";
+	}
+
 	document.getElementById("item-list-total").innerHTML = formatPriceEuro(total);
 	document.getElementById("item-list-qty").innerHTML = quantity;
 })();
