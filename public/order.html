@@ -28,88 +28,88 @@
 <body>
 
 
-<header>
-    <nav>
-        <h1><a href="/">Orinoco</a></h1>
-        <div>
-            <a href="/"><i class="fa fa-home"></i> Products</a>
-            <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
-        </div>
-    </nav>
-</header>
-<main>
+    <header>
+        <nav>
+            <h1><a href="/">Orinoco <i class="fa" id="store-logo"></i></a></h1>
+            <div>
+                <a href="/"><i class="fa fa-home"></i> Products</a>
+                <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
+            </div>
+        </nav>
+    </header>
+    <main>
 
-    <section>
+        <section>
 
-<h2>Your order <i class="fa fa-shopping-basket"></i></h2>
-        <table id="item-list">
+            <h2>Your order <i class="fa fa-shopping-basket"></i></h2>
+            <table id="item-list">
 
-            <tr id="item-table" style="display:none">
-                <td><a class="item-link name">name</a></td>
-                <td class="qty"></td>
-                <td class="price">price</td>
-                <td class="total"></td>
-            </tr>
-            <tfoot>
-            <th>total</th>
-            <th></th>
-            <th></th>
-            <th id="item-list-total"></th>
-            </tfoot>
-        </table>
-        <table>
-            <tr>
+                <tr id="item-table" style="display:none">
+                    <td><a class="item-link name">name</a></td>
+                    <td class="qty"></td>
+                    <td class="price">price</td>
+                    <td class="total"></td>
+                </tr>
+                <tfoot>
+                    <th>total</th>
+                    <th id="item-list-qty"></th>
+                    <th></th>
+                    <th id="item-list-total"></th>
+                </tfoot>
+            </table>
+            <table>
+                <tr>
 
-            </tr>
-        </table>
+                </tr>
+            </table>
 
-        <h2>Shipping informations <i class="fa fa-truck"></i></h2>
-        <form id="user-form">
-            <fieldset id="user-fields">
-                <table>
-                    <tr>
+            <h2>Shipping informations <i class="fa fa-truck"></i></h2>
+            <form id="user-form">
+                <fieldset id="user-fields">
+                    <table>
+                        <tr>
 
-                        <td><label for="firstName">First name :</label></td>
-                        <td><input type="text" name="firstName" id="firstName" required/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="lastName">Last name :</label></td>
-                        <td><input type="text" name="lastName" id="lastName" required/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="email">Email :</label></td>
-                        <td><input type="email" name="email" id="email" required/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="address">Address :</label></td>
-                        <td><input type="address" name="address" id="address" required/></td>
-                    </tr>
-                    <tr>
-                        <td><label for="city">City :</label></td>
-                        <td><input type="city" name="city" id="city" required/></td>
-                    </tr>
+                            <td><label for="firstName">First name :</label></td>
+                            <td><input type="text" name="firstName" id="firstName" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lastName">Last name :</label></td>
+                            <td><input type="text" name="lastName" id="lastName" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="email">Email :</label></td>
+                            <td><input type="email" name="email" id="email" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="address">Address :</label></td>
+                            <td><input type="address" name="address" id="address" required/></td>
+                        </tr>
+                        <tr>
+                            <td><label for="city">City :</label></td>
+                            <td><input type="city" name="city" id="city" required/></td>
+                        </tr>
 
-                </table>
+                    </table>
 
-            </fieldset>
-            <input type="submit" class="blue-bg" id="submitOrderButton" value="Confirmer !"/>
-        </form>
-
-
-        <div id="order-status"></div>
-
-        <div id="order-number"></div>
-    </section>
+                </fieldset>
+                <input type="submit" class="blue-bg" id="submitOrderButton" value="Confirmer !"/>
+            </form>
 
 
+            <h3 id="order-status"></h3>
+
+            <h3 id="order-number" class=""></h3>
+        </section>
 
 
-</main>
-<footer>
-    Orinoco by pb
-</footer>
-<script src="/js/main.js"></script>
-<script src="/js/commande.js"></script>
+
+
+    </main>
+    <footer>
+        Orinoco by pb
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/order.js"></script>
 </body>
 
 </html>

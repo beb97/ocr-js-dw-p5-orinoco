@@ -11,193 +11,193 @@
    Base styles: opinionated defaults
    ========================================================================== */
 
-html {
-  color: #222;
-  font-size: 1em;
-  line-height: 1.4;
-}
+   html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+  }
 
 
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
 
-body {
-max-width: 1000px;
-margin: auto;
-font-family: 'Roboto', sans-serif;
-}
+   body {
+    max-width: 1000px;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+  }
 
-nav {
-display:flex;
-flex-wrap: wrap;
-justify-content: space-between;
- align-items: center;
- margin: 10px 40px;
+  nav {
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 40px;
 
-}
+  }
 
-body{
-background-color: white;
-}
+  body{
+    background-color: white;
+  }
 
-main {
-margin: 20px;
-border-radius: 15px;
-}
+  main {
+    margin: 20px;
+    border-radius: 15px;
+  }
 
-section {
-background-color: #f2f6fd;
-border-radius: 15px;
-padding: 15px;
+  section {
+    background-color: #f2f6fd;
+    border-radius: 15px;
+    padding: 15px;
+    text-align: center;
+  }
 
-}
+  h1, h2, h3, a {
+    margin: 10px;
+    text-decoration: none;
+    color:#0065FC;
+  }
 
-h1, h2, h3, a {
-margin: 10px;
-text-decoration: none;
-color:#0065FC;
-}
+  p {
+    color: black;}
 
-p {
-color: black;}
+    h2, h3 {
+      text-align: center;
+    }
 
-h2, h3 {
-text-align: center;
-}
+    nav h1 {
+      font-family: 'Rancho', cursive;
+      font-size: 4em;
+    }
 
-nav h1 {
-font-family: 'Rancho', cursive;
-font-size: 4em;
-}
+    a:hover {
+      text-decoration: underline;
+    }
 
-a:hover {
-text-decoration: underline;
-}
+    img {
+      height:200px;
+      width: 250px;
+      object-fit: cover;
+      border-radius: 15px;
+      box-shadow: 0px 0px 1px black;
+    }
 
-img {
-height:200px;
-width: 250px;
-object-fit: cover;
-border-radius: 15px;
-box-shadow: 0px 0px 1px black;
-}
+    img:hover {
+      opacity: 0.5;
+      transition: 1s;
+    }
 
-img:hover {
-opacity: 0.5;
-transition: 1s;
-}
+    footer {
+      margin: 20px;
+      max-width : 1200px;
+      display:flex;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+    }
 
-footer {
-margin: 20px;
-max-width : 1200px;
-display:flex;
-flex-wrap: wrap;
-justify-content: space-evenly;
-}
+    button {
+      margin: 15px;
+    }
 
-button {
-margin: 15px;
-}
+    table {
+      margin: auto;
+      text-align: center;
+      vertical-align: middle;
+      border-collapse: collapse;
+    }
 
-table {
-margin: auto;
-text-align: center;
-vertical-align: middle;
-border-collapse: collapse;
-}
+    #item-list td {
+      border-width: 1px 0px 1px 0px;
+      border-style: solid;
+      border-color: #0065FC;
+      padding: 0px 6px;
+    }
 
-#item-list td {
-border-width: 1px 0px 1px 0px;
-border-style: solid;
-border-color: #0065FC;
-padding: 0px 6px;
-}
+    .card-pack {
+     display: flex;
+     flex-wrap: wrap;
+     justify-content: space-evenly;
+     flex-direction: row;
+   }
 
-.card-pack {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-evenly;
-	flex-direction: row;
-}
+   .card {
+    margin: auto;
+    margin-bottom: 15px;
+    border-radius: 15px;
+    border: 4px white solid;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    align-content: center;
+    box-shadow: 1px 1px 4px grey;
+  }
 
-.card {
-margin: auto;
-margin-bottom: 15px;
-border-radius: 15px;
-border: 4px white solid;
-display: flex;
-justify-content: center;
-background-color: white;
-align-content: center;
-box-shadow: 1px 1px 4px grey;
-}
+  .card:hover {
+    box-shadow: 1px 1px 4px 4px #0065FC;
+    transition: all 0.3s ease-out;
+  }
 
-.card:hover {
-box-shadow: 1px 1px 4px 4px #0065FC;
-transition: all 0.3s ease-out;
-}
+  .small {
+    min-width: 250px;
+    max-width: 250px;
+    flex-direction: column;
+  }
 
-.small {
-min-width: 250px;
-max-width: 250px;
-flex-direction: column;
-}
+  .big {
+    max-width: 700px;
+    flex-direction: column;
+  }
 
-.big {
-max-width: 700px;
-flex-direction: column;
-}
+  .card > .content {
+    text-align: center;
+    color:#0065FC;
+  }
 
-.card > .content {
-text-align: center;
-color:#0065FC;
-}
+  .img-wrapper {
+    display: flex;
+    justify-content: center;
+  }
 
-.img-wrapper {
-display: flex;
-justify-content: center;
-}
+  #item-table img {
+    height: 50px;
+    width: 50px;
+    object-fit: cover;
+  }
 
-#item-table img {
-height: 50px;
-width: 50px;
-object-fit: cover;
-}
+  .bold {
+    font-weight: bold;
+  }
 
-.bold {
-font-weight: bold;
-}
+  .blue-bg {
+    background-color: #0065FC;
+    color: white;
+    font-family: 'Rancho', cursive;
+    font-size:2em;
+  }
 
-.blue-bg {
-  background-color: #0065FC;
-  color: white;
-  font-family: 'Rancho', cursive;
-font-size:2em;
-}
+  button, input[type=submit] {
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: bold;
+    display: block;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0 0 0 1px #D9D9D9 inset;
+    padding-left: 0px;
+    transition: all 0.5s;
+    padding: 10px;
+  }
 
-button, input[type=submit] {
-margin: auto;
-margin-top: 10px;
-margin-bottom: 10px;
-font-weight: bold;
-  display: block;
-  cursor: pointer;
-  outline: none;
-  border: none;
-  border-radius: 30px;
-  box-shadow: 0 0 0 1px #D9D9D9 inset;
-  padding-left: 0px;
-  transition: all 0.5s;
-  padding: 10px;
-}
-
-button:hover, input[type=submit]:hover {
-  background-color: #DEEBFF;
-  color:  #0065FC;
-  transition: all 0.5s;
-  box-shadow: 0 0 0 2px #0065FC inset;
-}
+  button:hover, input[type=submit]:hover {
+    background-color: #DEEBFF;
+    color:  #0065FC;
+    transition: all 0.5s;
+    box-shadow: 0 0 0 2px #0065FC inset;
+  }
 
 /* ==========================================================================
    Helper classes
@@ -207,8 +207,8 @@ button:hover, input[type=submit]:hover {
  * Hide visually and from screen readers
  */
 
-.hidden,
-[hidden] {
+ .hidden,
+ [hidden] {
   display: none !important;
 }
 
@@ -221,7 +221,7 @@ button:hover, input[type=submit]:hover {
  *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
  */
 
-.sr-only {
+ .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
   height: 1px;
@@ -240,8 +240,8 @@ button:hover, input[type=submit]:hover {
  * https://www.drupal.org/node/897638
  */
 
-.sr-only.focusable:active,
-.sr-only.focusable:focus {
+ .sr-only.focusable:active,
+ .sr-only.focusable:focus {
   clip: auto;
   height: auto;
   margin: 0;
@@ -255,7 +255,7 @@ button:hover, input[type=submit]:hover {
  * Hide visually and from screen readers, but maintain layout
  */
 
-.invisible {
+ .invisible {
   visibility: hidden;
 }
 
@@ -271,8 +271,8 @@ button:hover, input[type=submit]:hover {
  *    `:before` to contain the top-margins of child elements.
  */
 
-.clearfix::before,
-.clearfix::after {
+ .clearfix::before,
+ .clearfix::after {
   content: " ";
   display: table;
 }
@@ -287,16 +287,16 @@ button:hover, input[type=submit]:hover {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+  }
 
-@media print,
+  @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
   (min-resolution: 1.25dppx),
   (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+    /* Style adjustments for high resolution devices */
+  }
 
 /* ==========================================================================
    Print styles.
@@ -304,36 +304,36 @@ button:hover, input[type=submit]:hover {
    https://www.phpied.com/delay-loading-your-print-css/
    ========================================================================== */
 
-@media print {
-  *,
-  *::before,
-  *::after {
-    background: #fff !important;
-    color: #000 !important;
-    /* Black prints faster */
-    box-shadow: none !important;
-    text-shadow: none !important;
-  }
+   @media print {
+    *,
+    *::before,
+    *::after {
+      background: #fff !important;
+      color: #000 !important;
+      /* Black prints faster */
+      box-shadow: none !important;
+      text-shadow: none !important;
+    }
 
-  a,
-  a:visited {
-    text-decoration: underline;
-  }
+    a,
+    a:visited {
+      text-decoration: underline;
+    }
 
-  a[href]::after {
-    content: " (" attr(href) ")";
-  }
+    a[href]::after {
+      content: " (" attr(href) ")";
+    }
 
-  abbr[title]::after {
-    content: " (" attr(title) ")";
-  }
+    abbr[title]::after {
+      content: " (" attr(title) ")";
+    }
 
   /*
    * Don't show links that are fragment identifiers,
    * or use the `javascript:` pseudo protocol
    */
-  a[href^="#"]::after,
-  a[href^="javascript:"]::after {
+   a[href^="#"]::after,
+   a[href^="javascript:"]::after {
     content: "";
   }
 
@@ -351,7 +351,7 @@ button:hover, input[type=submit]:hover {
    * Printing Tables:
    * https://web.archive.org/web/20180815150934/http://css-discuss.incutio.com/wiki/Printing_Tables
    */
-  thead {
+   thead {
     display: table-header-group;
   }
 

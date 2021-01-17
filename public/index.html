@@ -28,40 +28,45 @@
 <body>
 
 
-<header>
-    <nav>
-        <h1><a href="/">Orinoco</a></h1>
-        <div>
-            <a href="/"><i class="fa fa-home"></i> Products</a>
-            <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
-        </div>
-    </nav>
-</header>
-<main>
-    <section>
-    <h2>Our products :</h2>
-    <div class="card-pack" id="item-list">
-        <div class="small card" id="item-template" style="display:none">
-
-            <div class="img-wrapper">
-                <a class="item-link">
-                <img class="img" src=""/>
-                </a>
+    <header>
+        <nav>
+            <h1><a href="/">Orinoco <i class="fa" id="store-logo"></i></a></h1>
+            <select id="store-select" onchange="changeStore()">
+                <option value="furniture">Furnitures</option>
+                <option value="cameras">Cameras</option>
+                <option value="teddies">Teddies</option>
+            </select>
+            <div>
+                <a href="/"><i class="fa fa-home"></i> Products</a>
+                <a href="/cart/"><i class="fa fa-shopping-cart"></i> Cart<span id="cart-count"></span></a>
             </div>
-            <div class="content">
-            <div class="name bold"></div>
-            <div class="price"></div>
-            </div>
-        </div>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Our products :</h2>
+            <div class="card-pack" id="item-list">
+                <div class="small card" id="item-template" style="display:none">
 
-    </div>
-    </section>
-</main>
-<footer>
-    Orinoco by pb
-</footer>
-<script src="/js/main.js"></script>
-<script src="/js/index.js"></script>
+                    <div class="img-wrapper">
+                        <a class="item-link">
+                            <img class="img" src=""/>
+                        </a>
+                    </div>
+                    <div class="content">
+                        <div class="name bold"></div>
+                        <div class="price"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <footer>
+        Orinoco by pb
+    </footer>
+    <script src="/js/main.js"></script>
+    <script src="/js/index.js"></script>
 </body>
 
 </html>
