@@ -136,7 +136,12 @@ function getCurrentStore() {
 }
 
 function countItems() {
-  let quantity = cart.items.length;
+  let quantity = 0;
+
+  for(let item of cart.items) {
+          quantity += item.qty;
+  };
+  
   return quantity;
 }
 
